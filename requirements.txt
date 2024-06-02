@@ -1,6 +1,5 @@
 flask
-opencv-python
 numpy
 ultralytics
 requests
-gunicorn==20.1.0
+torch==2.3.0+cpu
