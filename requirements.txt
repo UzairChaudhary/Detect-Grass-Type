@@ -3,3 +3,4 @@ opencv-python
 numpy
 ultralytics
 requests
+gunicorn==20.1.0
