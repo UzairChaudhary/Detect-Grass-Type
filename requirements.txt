@@ -1,5 +1,5 @@
-flask
-numpy
-ultralytics
-requests
-torch==2.3.0+cpu
+flask==3.0.3
+numpy==1.26.4
+ultralytics==8.2.27
+requests==2.32.3
+torch==2.2.0+cpu
