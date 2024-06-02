@@ -2,4 +2,6 @@ flask
 numpy
 ultralytics
 requests
-torch==2.3.0+cpu
+torch==2.3.0
+torchvision
+--extra-index-url https://download.pytorch.org/whl/cpu
