@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 import requests
 from io import BytesIO
 from PIL import Image
-import sys
+import os
 
 app = Flask(__name__)
 
@@ -53,5 +53,5 @@ def predict():
     return jsonify({'grass_type': grass_type}),200
 
 if __name__ == '__main__':
-    print("Running app...", file=sys.stderr)
-    app.run()
+    port = int(os.environ.get('PORT',5000))
+    app.run(host='0.0.0.0',port=port,debug=True)
